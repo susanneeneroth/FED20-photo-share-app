@@ -1,0 +1,137 @@
+@import "bootstrap/scss/bootstrap";
+@import "homepage";
+@import "navigation";
+@import "imagegrid";
+@import "upload";
+@import "albumlist";
+
+
+$footer-bkg-color: rgb(0, 75, 75);
+$link-color: #df7422;
+$link-color-hover: #8f4a00; 
+
+body {
+	overflow-x: hidden;
+}
+
+#App {
+	position: relative;
+}
+
+.link-margin-top {
+    margin-top: 8px;
+}
+
+.content-wrapper {
+    margin: auto;
+    padding-top: 20px;
+    width: 80%;
+    height: 100vh;
+}
+
+h2.content-header {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.content-text {
+    text-align: center;
+    font-size: 1rem;
+}
+
+a.content-link {
+    color: #df7422;
+    text-decoration: none;
+}
+
+a.content-link:hover {
+    color: #8f4a00;
+    text-decoration: none;
+}
+
+.form-wrapper {
+    margin: auto;
+    padding-top: 20px;
+    width: 40%;
+    height: 100vh;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+	color: #2e2e2e;
+}
+
+.centered-heading {
+    text-align: center;
+}
+
+.liked-text {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #2e2e2e;
+    border: #2e2e2e;
+}
+
+.btn:hover {
+    background-color: #545454;
+    border: #545454;
+}
+
+.btn-margin-top {
+margin-top: 20px;
+}
+
+.edit-btn-margin{
+    margin-right: 7px;
+}
+
+.row-margin-top {
+    margin-bottom: 0 !important;
+    background-color: pink;
+}
+
+#dropzone-wrapper {
+    border: 2px dashed #ccc;
+    border-radius: 5px 20px 5px;
+    background-color: #eeeeee;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+
+    &.accept-file {
+        background-color: #def7e4;
+        border-color: #a6c4ad;
+        color: #003500;
+    }
+
+    &.reject-file {
+		background-color: #f9d0d3;
+		border-color: #e9babf;
+		color: #6d1720;
+	}
+}
+
+.alert-wrapper {
+    background-color: #f7f7de;
+    border-color: #df7422;
+    color: #2e2e2e;
+}
+
+.footer-wrapper {
+    background-color: $footer-bkg-color;
+    color: #ffffff;
+    height: 200px;
+    width: 100vw;
+
+    .footer-content {
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+$navbar-bkg: #2e2e2e;
+
+.navbar {
+    background-color: $navbar-bkg;
+
+    .navbar-link {
+        color: #f2f2f2;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .navbar-link:hover {
+        color: #7b7b7b;
+    }
+}

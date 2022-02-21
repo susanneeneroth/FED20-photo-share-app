@@ -1,0 +1,16 @@
+.images-masonry {
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+
+    width: auto;
+
+        .images-masonry-column {
+            padding-left: 15px; /* gutter size */
+            background-clip: padding-box;       
+        }
+
+        .images-masonry-card {
+            margin-bottom: 15px;
+        }
+}
+        
