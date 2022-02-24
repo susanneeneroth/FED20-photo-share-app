@@ -16,6 +16,7 @@ const SelectedImages = ({
         disabled={
           !(selectedImages?.length + dislikedImages?.length === images?.length)
         }
+        className="btn-margin-bottom"
         type="submit"
         variant="dark"
         onClick={(e) => {
@@ -32,11 +33,11 @@ const SelectedImages = ({
           onHide={() => setShow(false)}
           backdrop="static"
           keyboard={false}
+          className="alert-wrapper"
         >
           <div closeButton={thanks}>
             <div>Rating of images</div>
           </div>
-          {/* <p className="liked-text">Liked images</p> */}
           {thanks ? (
             <p className="text-center m-4">Thankyou for your rating!</p>
           ) : (
