@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Modal, Button, Col, Row, Card } from 'react-bootstrap'
+import { Modal, Button, Col, Row, Card, Alert } from 'react-bootstrap'
 
 const SelectedImages = ({
   images,
@@ -26,22 +26,22 @@ const SelectedImages = ({
         Save selection
       </Button>
       {show && (
-        <Modal
+        <Alert
           closebutton={thanks ? '' : undefined}
           show={() => setShow(true)}
           onHide={() => setShow(false)}
           backdrop="static"
           keyboard={false}
         >
-          <Modal.Header closeButton={thanks}>
-            <Modal.Title>Rating of images</Modal.Title>
-          </Modal.Header>
+          <div closeButton={thanks}>
+            <div>Rating of images</div>
+          </div>
           {/* <p className="liked-text">Liked images</p> */}
           {thanks ? (
             <p className="text-center m-4">Thankyou for your rating!</p>
           ) : (
             <>
-              <Modal.Body>
+              <div>
                 {dislikedImages && (
                   <Row className="mt-3">
                     {selectedImages.map((image, i) => {
@@ -68,9 +68,9 @@ const SelectedImages = ({
                     )
                   })}
                 </Row>
-              </Modal.Body>
+              </div>
 
-              <Modal.Footer>
+              <div>
                 <Button variant="dark" onClick={() => setShow(false)}>
                   Go back
                 </Button>
@@ -83,10 +83,10 @@ const SelectedImages = ({
                 >
                   Save
                 </Button>
-              </Modal.Footer>
+              </div>
             </>
           )}
-        </Modal>
+        </Alert>
       )}
     </>
   )
