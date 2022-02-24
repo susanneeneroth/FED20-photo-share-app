@@ -35,9 +35,9 @@ const SelectedImages = ({
           keyboard={false}
           className="alert-wrapper"
         >
-          <div closeButton={thanks}>
+          <h4 className="centered-heading">
             <div>Rating of images</div>
-          </div>
+          </h4>
           {thanks ? (
             <p className="text-center m-4">Thankyou for your rating!</p>
           ) : (
@@ -72,7 +72,11 @@ const SelectedImages = ({
               </div>
 
               <div>
-                <Button variant="dark" onClick={() => setShow(false)}>
+                <Button
+                  className="edit-btn-margin"
+                  variant="dark"
+                  onClick={() => setShow(false)}
+                >
                   Go back
                 </Button>
                 <Button
